@@ -1,0 +1,207 @@
+TASK 1:Simple Programs todo for variables
+
+=>Q.NO 1 : Declare four variables without assigning values and print them in the console:
+
+var variable1;
+var variable2;
+var variable3;
+var variable4;
+
+console.log(variable1);
+console.log(variable2);
+console.log(variable3);
+console.log(variable4);
+
+
+=>Q.NO 2 : How to get the value of the variable myvar as output:
+
+var myvar = 1;
+console.log(myvar); 
+
+=>Q.NO 3 : Declare variables to store your first name, last name, marital status, country, and age in multiple lines:
+
+var firstName = "John";
+var lastName = "Doe";
+var maritalStatus = "Single";
+var country = "United States";
+var age = 30;
+
+=>Q.NO 4 : Declare variables to store your first name, last name, marital status, country, and age in a single line:
+
+var firstName = "John", lastName = "Doe", maritalStatus = "Single", country = "United States", age = 30;
+
+=>Q.NO 5 : Declare variables and assign string, boolean, undefined, and null data types:
+
+var stringValue = "Hello, World";
+var booleanValue = true;
+var undefinedValue = undefined;
+var nullValue = null;
+
+=>Q.NO 6 : Convert the string to integer
+
+// Method 1: parseInt()
+var str1 = "10";
+var int1 = parseInt(str1);
+
+// Method 2: Number()
+var str2 = "10";
+var int2 = Number(str2);
+
+// Method 3: Plus sign (+)
+var str3 = "10";
+var int3 = +str3;
+
+console.log(int1);
+console.log(int2); 
+console.log(int3); 
+
+=>Q.NO 7 : Write 6 statement which provide truthy & falsey values.
+
+// Statements that provide truthy values
+var truthyString = "Hello"; // A non-empty string is truthy
+var truthyNumber = 42; // A non-zero number is truthy
+var truthyObject = { key: "value" }; // An object is always truthy
+var truthyArray = [1, 2, 3]; // A non-empty array is truthy
+var truthyFunction = function() { return true; }; // A function that returns true is truthy
+var truthyTruthy = true; // Boolean true is truthy
+
+// Statements that provide falsey values
+var falseyEmptyString = ""; // An empty string is falsey
+var falseyZero = 0; // Zero is falsey
+var falseyNull = null; // Null is falsey
+var falseyUndefined = undefined; // Undefined is falsey
+var falseyNaN = NaN; // NaN (Not-a-Number) is falsey
+var falseyFalse = false; // Boolean false is falsey
+
+
+
+TASK 2:Simple Programs todo for Operators
+
+Q.NO 1 : Square of a number:
+
+function square(number) {
+  return number * number;
+}
+
+var num = 5; 
+console.log("Square of " + num + " is " + square(num));
+
+Q.NO 2 : Swapping 2 numbers:
+
+var a = 5;
+var b = 10;
+console.log("Before swapping: a =", a, "b =", b);
+
+// Swapping using a temporary variable
+var temp = a;
+a = b;
+b = temp;
+
+console.log("After swapping: a =", a, "b =", b);
+
+
+Q.NO 3 : Addition of 3 numbers:
+
+function addThreeNumbers(num1, num2, num3) {
+  return num1 + num2 + num3;
+}
+
+var num1 = 5;
+var num2 = 10;
+var num3 = 15;
+console.log("Sum of three numbers is: " + addThreeNumbers(num1, num2, num3));
+
+
+Q.NO 4 : Celsius to Fahrenheit conversion:
+
+function celsiusToFahrenheit(celsius) {
+  return (celsius * 9/5) + 32;
+}
+
+var celsiusTemp = 25;
+console.log(celsiusTemp + "°C is equivalent to " + celsiusToFahrenheit(celsiusTemp) + "°F");
+
+
+Q.NO 5 : Meter to miles:
+
+function meterToMiles(meters) {
+  return meters / 1609.344; 
+}
+
+var meters = 5000; 
+console.log(meters + " meters is approximately " + meterToMiles(meters).toFixed(2) + " miles");
+
+
+Q.NO 6 : Pounds to kg:
+
+function poundsToKg(pounds) {
+  return pounds * 0.45359237; 
+}
+
+var pounds = 150; 
+console.log(pounds + " pounds is approximately " + poundsToKg(pounds).toFixed(2) + " kilograms");
+
+
+Task 3: Simple Programs todo for Condition , Looping and Arrays
+
+Q.NO 1 : Write a loop that makes seven calls to console.log to output the following triangle:
+
+for (let i = 1; i <= 7; i++) {
+  let line = '';
+  for (let j = 1; j <= i; j++) {
+    line += '#';
+  }
+  console.log(line);
+}
+
+
+Q.NO 2 : Iterate through the string array and print it contents
+
+var strArray = [
+  "<option>Jazz</option>",
+  "<option>Blues</option>",
+  "<option>New Age</option>",
+  "<option>Classical</option>",
+  "<option>Opera</option>"
+];
+
+for (var i = 0; i < strArray.length; i++) {
+  console.log(strArray[i]);
+}
+
+
+ARRAYS:
+
+Q)write a code to count the elements in the array . Don’t use length property
+
+var myarray = [11, 22, 33, 44, 55];
+var count = 0;
+
+for (var i in myarray) {
+  if (myarray.hasOwnProperty(i)) {
+    count++;
+  }
+}
+
+console.log("The number of elements in the array is: " + count);
+
+
+Q)Create an array called foods holds the names of your top 20 favorite foods, starting with the best food.
+
+let foods = [
+  "Pizza","Sushi","Chocolate","Burgers","Ice Cream","Pasta","Steak","Tacos","Cakes","Salmon","Fried Chicken","Mango","Spaghetti","Cheesecake","Pancakes","Lobster","Ravioli","Tiramisu","Lasagna",
+  "Shrimp Scampi"
+];
+
+Q)Foods variable holds the names of your top 20 favorite foods, starting with the best food. How can you find your fifth favorite food?
+
+let fifthFavoriteFood = foods[4];
+console.log("My fifth favorite food is: " + fifthFavoriteFood);
+
+
+
+
+
+
+
+
