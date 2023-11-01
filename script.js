@@ -45,19 +45,19 @@
 //Use the same rest countries and print all countries names,regions,sub-region and population.
 
 
-// var request = new XMLHttpRequest();  //creating client object
+var request = new XMLHttpRequest();  //creating client object
 
-// request.open("GET","https://restcountries.com/v3.1/all",true)    //opening connection bw api and client
+request.open("GET","https://restcountries.com/v3.1/all",true)    //opening connection bw api and client
 
-// request.send()  //sending request to server
+request.send()  //sending request to server
 
-// request.onload = function()
-// {
-//     var data=request.response;
-//     var result=JSON.parse(data);
-//     for(var i=0;i<result.length;i++)
-//     {
-//         console.log("name:",result[i].name.common,"\nRegion:",result[i].region,"\nSub-region",result[i].subregion,"\nPopulation",result[i].population);
-//     }
-// }
+request.onload = function()
+{
+    var data=request.response;
+    var result=JSON.parse(data);
+    for(var i=0;i<result.length;i++)
+    {
+        console.log("name:",result[i].name.common,"\nRegion:",result[i].region,"\nSub-region",result[i].subregion,"\nPopulation",result[i].population);
+    }
+}
 
